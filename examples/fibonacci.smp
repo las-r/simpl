@@ -1,0 +1,23 @@
+// simpl fibonacci sequence generator
+
+// count and limit
+set int64 limit conv int64 in "How many numbers would you like?: "
+set int64 count 0
+
+// init variables
+set int64 a 0
+set int64 b 1
+set int64 temp 0
+
+// main loop
+label LOOP
+    out a
+
+    // calculate next fibonacci number
+    set _ temp + a b
+    set _ a b
+    set _ b temp
+
+    // increment loop counter and check bound
+    set _ count + count 1
+jmpif LOOP < count limit
