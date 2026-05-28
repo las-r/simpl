@@ -154,7 +154,7 @@ lbl = {}
 if len(sys.argv) > 1:
     filename = sys.argv[1]
 else:
-    print("usage: python simpl.py [filename]")
+    print("usage: python interpreter.py [filename]")
     sys.exit(1)
 with open(filename, "r") as f:
     code = f.read()
