@@ -1,0 +1,8 @@
+func int factorial 1 int n
+    if <= n 1
+        ret 1
+    endif
+    ret * call factorial - n 1 n
+endfunc
+
+out call factorial conv int in "Enter n for n!: "
